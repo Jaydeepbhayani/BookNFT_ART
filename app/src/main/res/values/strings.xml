@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BookNFT_ART</string>
+
+    <string name="connection_error">Connection Error</string>
+    <string name="str_ok">OK</string>
+    <string name="version">Version 1.0</string>
+    <string name="str_zero">0</string>
+    <string name="score">Score</string>
+
+</resources>

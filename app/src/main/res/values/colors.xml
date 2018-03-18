@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="toolbarTransparent">@android:color/transparent</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="material_grey_200_">#EEEEEE</color>
+    <color name="secondary_dark_text">#424242</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="light_gray">#bdbdbd</color>
+    <color name="grey">#C7C7C7</color>
+    <color name="background_color">#fafafa</color>
+    <color name="blue">#007dff</color>
+    <color name="light_blue_100">#B3E5FC</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_transparent">#adffffff</color>
+    <color name="gray_dark_transparent">#eb808080</color>
+    <color name="gray_transparent">#55c9c6c6</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="background_dark">#ff333333</color>
+    <color name="red">#F44336</color>
+    <color name="pink_long_day">#c51162</color>
+    <color name="pink_24_hours">#ff4081</color>
+    <color name="orange_night">#ef6c00</color>
+    <color name="blue1">#2196F3</color>
+    <color name="phone_green">#64dd17</color>
+    <color name="video_blue">#2196f3</color>
+    <color name="green">#4caf50</color>
+    <color name="background_super_dark">#ff292929</color>
+    <color name="ll_border">#CCCCCC</color>
+    <color name="publisher_border_color">#FFFFFF</color>
+    <color name="material_gray_300">#E0E0E0</color>
+    <color name="light_green">#8CD790</color>
+</resources>
