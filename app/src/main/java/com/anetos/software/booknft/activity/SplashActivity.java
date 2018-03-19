@@ -1,25 +1,31 @@
 package com.anetos.software.booknft.activity;
 
 import android.content.Intent;
-import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.Handler;
+import android.widget.TextView;
 
 import com.anetos.software.booknft.R;
 import com.anetos.software.booknft.support.ui.BaseActivity;
 
+import butterknife.BindView;
+
 public class SplashActivity extends BaseActivity {
 
     private static final int SPLASH_TIME_OUT = 1500;
+    @BindView(R.id.tv_version)
+    TextView tvVersion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        tvVersion.setText(getVersionName());
         new Handler().postDelayed(new Runnable() {
 
 			/*
-			 * Showing splash screen with a timer. This will be useful when you
+             * Showing splash screen with a timer. This will be useful when you
 			 * want to show case your app logo / company
 			 */
 
@@ -41,6 +47,21 @@ public class SplashActivity extends BaseActivity {
 
     @Override
     protected int provideLayoutResourceId() {
-        return R.layout.activity_spalsh;
+        return R.layout.activity_splash;
+    }
+
+    private String getVersionName() {
+        /*try {
+            PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
+            return pInfo.versionName;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }*/
+        try {
+            return getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return getResources().getString(R.string.version);
     }
 }

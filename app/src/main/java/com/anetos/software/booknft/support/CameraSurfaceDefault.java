@@ -11,7 +11,6 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
 import com.anetos.software.booknft.R;
-import com.anetos.software.booknft.activity.NFTBookActivity;
 
 import java.io.IOException;
 
@@ -19,13 +18,13 @@ import java.io.IOException;
  * Created by Herbert Caller on 02/12/2017.
  */
 
-public class CameraSurface extends SurfaceView implements SurfaceHolder.Callback, Camera.PreviewCallback, PreviewListner {
+public class CameraSurfaceDefault extends SurfaceView implements SurfaceHolder.Callback, Camera.PreviewCallback, PreviewListner {
 
     private static final String TAG = "CameraSurface";
     private Camera camera;
 
     @SuppressWarnings("deprecation")
-    public CameraSurface(Context context) {
+    public CameraSurfaceDefault(Context context) {
 
         super(context);
 
@@ -115,7 +114,7 @@ public class CameraSurface extends SurfaceView implements SurfaceHolder.Callback
 
             camera.startPreview();
 
-            NFTBookActivity.nativeVideoInit(capWidth, capHeight, cameraIndex, frontFacing);
+            //NFTBookActivity.nativeVideoInit(capWidth, capHeight, cameraIndex, frontFacing);
 
         }
     }
@@ -125,7 +124,7 @@ public class CameraSurface extends SurfaceView implements SurfaceHolder.Callback
     @Override
     public void onPreviewFrame(byte[] data, Camera cam) {
 
-        NFTBookActivity.nativeVideoFrame(data);
+        //NFTBookActivity.nativeVideoFrame(data);
 
         cam.addCallbackBuffer(data);
     }

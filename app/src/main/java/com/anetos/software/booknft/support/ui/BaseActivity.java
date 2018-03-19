@@ -48,7 +48,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(provideLayoutResourceId());
-        //ButterKnife.bind(this);
+        ButterKnife.bind(this);
         if (shouldInflateToolbar())
             inflateToolBar();
         // clearLightStatusBar(this.getWindow().getDecorView());

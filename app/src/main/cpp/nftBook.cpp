@@ -728,10 +728,6 @@ JNIEXPORT void JNICALL JNIFUNCTION_NATIVE(nativeVideoFrame(JNIEnv * env, jobject
     }
 }
 
-extern "C" {
-
-}
-
 
 JNIEXPORT jint JNICALL JNIFUNCTION_NATIVE(nativeDetectedPage(JNIEnv *, jobject, jint dpage))
 {

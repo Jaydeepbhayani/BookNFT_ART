@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-feature android:name="android.hardware.camera.any" />
     <uses-feature
@@ -41,12 +43,11 @@
         </activity>
 
         <activity
-            android:theme="@style/AppTheme.NoActionBar"
             android:name="com.anetos.software.booknft.activity.NFTBookActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize" />
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
 
-        <activity
-            android:name="org.artoolkit.ar.base.camera.CameraPreferencesActivity" />
+        <activity android:name="org.artoolkit.ar.base.camera.CameraPreferencesActivity" />
 
     </application>
 
