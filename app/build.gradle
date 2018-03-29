@@ -19,7 +19,7 @@ android {
         ndk {
             // Specifies the ABI configurations of your native
             // libraries Gradle should build and package with your APK.
-            abiFilters 'x86', 'mips', 'armeabi', 'armeabi-v7a'
+            //abiFilters 'x86', 'mips', 'armeabi', 'armeabi-v7a'
         }
     }
     buildTypes {
@@ -33,11 +33,11 @@ android {
             path 'CMakeLists.txt'
         }
     }
-    sourceSets {
+    /*sourceSets {
         main {
             jniLibs.srcDirs "libs"
         }
-    }
+    }*/
     compileOptions {
         targetCompatibility 1.8
         sourceCompatibility 1.8
@@ -55,6 +55,6 @@ dependencies {
     implementation project(':aRBaseLib')
 
     implementation 'pub.devrel:easypermissions:1.2.0'
-    compile 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }
